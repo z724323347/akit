@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/linjizong/flutter_app/BuildConfig.java
- com.linjizong.flutter_app.BuildConfig

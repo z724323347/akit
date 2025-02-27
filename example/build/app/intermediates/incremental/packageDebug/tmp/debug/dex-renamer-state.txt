@@ -1,4 +1,0 @@
-#Thu Feb 27 10:56:56 CST 2025
-base.0=/Users/summer/work/open_source/dokit/example/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
