@@ -1,0 +1,53 @@
+buildscript {
+    ext.kotlin_version = '1.9.0'
+    repositories {
+        // maven {
+        //     url 'http://artifactory.intra.xiaojukeji.com/artifactory/public/'
+        // }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url "https://storage.googleapis.com/download.flutter.io"
+        }
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'http://artifactory.intra.xiaojukeji.com/artifactory/public/'
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url "https://storage.googleapis.com/download.flutter.io"
+        }
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        google()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

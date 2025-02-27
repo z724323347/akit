@@ -1,0 +1,23 @@
+name: akit_demo
+description: akit测试工程
+version: 0.8.0
+homepage: http://flutter.intra.xiaojukeji.com/index.php
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  akit:
+    path: ..
+  dio: any
+  path_provider: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
