@@ -15,7 +15,7 @@ dependencies:
   vm_service: any
   package_info_plus: any
   shared_preferences: any
-  image: any
+  image: 4.2.0
   google_fonts: any
   string_scanner: any
   path_provider: any

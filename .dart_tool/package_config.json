@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/archive-3.3.1",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/archive-3.4.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -36,6 +36,12 @@
       "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/collection-1.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "crypto",
@@ -111,9 +117,9 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/image-3.1.3",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/image-4.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.15"
     },
     {
       "name": "js",
@@ -231,9 +237,9 @@
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/petitparser-4.4.0",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/petitparser-5.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.18"
     },
     {
       "name": "platform",
@@ -246,6 +252,12 @@
       "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/plugin_platform_interface-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "pointycastle",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/pointycastle-3.7.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "process",
@@ -369,9 +381,9 @@
     },
     {
       "name": "xml",
-      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/xml-5.3.1",
+      "rootUri": "file:///Users/summer/.pub-cache/hosted/pub.flutter-io.cn/xml-6.2.2",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.18"
     },
     {
       "name": "akit",
@@ -380,7 +392,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2025-02-27T08:47:32.788508Z",
+  "generated": "2025-02-27T10:00:34.942049Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

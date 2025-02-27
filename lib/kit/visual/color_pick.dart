@@ -278,8 +278,25 @@ class ColorPickerWidgetState extends State<ColorPickerWidget> {
     if (abgrPixel == null) {
       return;
     }
-    // final int argbPixel = _abgrToArgb(abgrPixel);
-    // ColorPickerKit.instance.color.value = Color(argbPixel);
+    int argb = rgbaToArgb(
+      abgrPixel.r.toInt(),
+      abgrPixel.g.toInt(),
+      abgrPixel.b.toInt(),
+      abgrPixel.a.toInt(),
+    );
+    final int argbPixel = _abgrToArgb(argb);
+    ColorPickerKit.instance.color.value = Color(argbPixel);
+  }
+
+  /// Uint32 编码过的像素颜色值（#AABBGGRR)转为（#AARRGGBB）
+  int _abgrToArgb(int argbColor) {
+    int r = (argbColor >> 16) & 0xFF;
+    int b = argbColor & 0xFF;
+    return (argbColor & 0xFF00FF00) | (b << 16) | r;
+  }
+
+  int rgbaToArgb(int r, int g, int b, int a) {
+    return (a << 24) | (r << 16) | (g << 8) | b;
   }
 
   RenderRepaintBoundary? _findCurrentPageRepaintBoundaryRenderObject() {
@@ -361,13 +378,6 @@ class ColorPickerWidgetState extends State<ColorPickerWidget> {
     final Uint8List? pngBytes = byteData?.buffer.asUint8List();
 
     return pngBytes;
-  }
-
-  /// Uint32 编码过的像素颜色值（#AABBGGRR)转为（#AARRGGBB）
-  int _abgrToArgb(int argbColor) {
-    int r = (argbColor >> 16) & 0xFF;
-    int b = argbColor & 0xFF;
-    return (argbColor & 0xFF00FF00) | (b << 16) | r;
   }
 }
 
