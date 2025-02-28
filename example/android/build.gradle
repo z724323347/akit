@@ -4,9 +4,9 @@ buildscript {
         // maven {
         //     url 'http://artifactory.intra.xiaojukeji.com/artifactory/public/'
         // }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
-        }
+        // maven {
+        //     url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        // }
         maven {
             url "https://storage.googleapis.com/download.flutter.io"
         }
@@ -24,12 +24,12 @@ buildscript {
 
 allprojects {
     repositories {
-        maven {
-            url 'http://artifactory.intra.xiaojukeji.com/artifactory/public/'
-        }
-        maven {
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
-        }
+        // maven {
+        //     url 'http://artifactory.intra.xiaojukeji.com/artifactory/public/'
+        // }
+        // maven {
+        //     url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        // }
         maven {
             url "https://storage.googleapis.com/download.flutter.io"
         }

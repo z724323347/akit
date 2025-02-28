@@ -57,7 +57,7 @@ class VMServiceWrapper {
     }
   }
 
-  disConnect() async {
+  Future<dynamic> disConnect() async {
     if (service != null) {
       print('waiting for client to shut down...');
       await service?.dispose();
